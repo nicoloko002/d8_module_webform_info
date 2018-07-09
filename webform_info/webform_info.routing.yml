@@ -1,0 +1,7 @@
+webform_info.content:
+  path: '/webform-info/{webform_submission}'
+  defaults:
+    _controller: '\Drupal\webform_info\Controller\WebformInfoController::content'
+    _title: 'Informações do Webform'
+  requirements:
+    _permission: 'access content'

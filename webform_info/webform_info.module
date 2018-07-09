@@ -1,0 +1,10 @@
+<?php
+
+// Hook que é chamado antes da página ser renderizada.
+// Serve para adicionar anexos à página.
+function word_hunting_page_attachments(array &$attachments) {
+  // Vai adicionar a biblioteca definida no arquivo .library.yml somente quando estiver acessando a página definida no .routing.yml
+  if (\Drupal::routeMatch()->getRouteName() == 'webform_info.content') {
+    $attachments['#attached']['library'][] = 'webform_info/informacoes-webform';
+  }
+}

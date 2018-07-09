@@ -1,0 +1,6 @@
+name: Informações do Webform
+description: Exemplo de módulo usado para acessar informações submetidas em um webform.
+package: Custom
+
+type: module # Definição do tipo, que pode ser "module" ou "theme"
+core: 8.x    # versáo do core necessária para que o módulo possa ser instalado
